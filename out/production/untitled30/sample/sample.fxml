@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane blendMode="MULTIPLY" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(to bottom left ,#6A5ACD,#FF7F50);">
+         <children>
+            <Button fx:id="btnSub" layoutX="126.0" layoutY="128.0" mnemonicParsing="false" onAction="#subtraction" prefHeight="54.0" prefWidth="54.0" style="-fx-background-color: #6A5ACD;" text="-" textFill="#fcf3f3">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <Button fx:id="btnMul" contentDisplay="CENTER" layoutX="209.0" layoutY="128.0" mnemonicParsing="false" onAction="#multiplication" prefHeight="54.0" prefWidth="54.0" style="-fx-background-color: #6A5ACD;" text="*" textAlignment="JUSTIFY" textFill="#fcf3f3">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <Button fx:id="btnAdd" contentDisplay="CENTER" layoutX="37.0" layoutY="128.0" mnemonicParsing="false" onAction="#addition" opacity="0.95" prefHeight="54.0" prefWidth="54.0" style="-fx-background-color: #6A5ACD;" stylesheets="@../../../../Desktop/1.css" text="+" textFill="#fcf3f3">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <Button fx:id="btnDiv" layoutX="298.0" layoutY="128.0" mnemonicParsing="false" onAction="#division" prefHeight="54.0" prefWidth="54.0" style="-fx-background-color: #6A5ACD;" stylesheets="@../../../../Desktop/1.css" text="/" textAlignment="CENTER" textFill="#fcf3f3">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <TextField fx:id="tfNum1" layoutX="72.0" layoutY="52.0" prefHeight="54.0" prefWidth="106.0">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <TextField fx:id="tfNum2" layoutX="228.0" layoutY="52.0" prefHeight="54.0" prefWidth="106.0" style="-fx-border-color: darken;">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <Label fx:id="lblAns" layoutX="32.0" layoutY="383.0" prefHeight="54.0" prefWidth="313.0" style="-fx-background-color: #fcf3f3;" text="  Answer" textAlignment="JUSTIFY" textFill="SLATEBLUE">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Button fx:id="btnClr" layoutX="298.0" layoutY="292.0" mnemonicParsing="false" onAction="#clear" prefHeight="54.0" prefWidth="54.0" style="-fx-background-color: #6A5ACD;" text="C" textFill="#fcf3f3">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnExp" layoutX="209.0" layoutY="209.0" mnemonicParsing="false" onAction="#pow" prefHeight="54.0" prefWidth="54.0" style="-fx-background-color: #6A5ACD;" text="exp" textFill="#fcf3f3">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnPct" layoutX="37.0" layoutY="209.0" mnemonicParsing="false" onAction="#percentage" prefHeight="54.0" prefWidth="54.0" style="-fx-background-color: #6A5ACD;" text="\%" textFill="#fcf3f3">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <Button fx:id="btnSqr" layoutX="127.0" layoutY="209.0" mnemonicParsing="false" onAction="#squareroot" prefHeight="54.0" prefWidth="54.0" style="-fx-background-color: #6A5ACD;" text="√" textFill="#fcf3f3">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <Button fx:id="btnSin" layoutX="34.0" layoutY="291.0" mnemonicParsing="false" onAction="#sin" prefHeight="54.0" prefWidth="54.0" style="-fx-background-color: #6A5ACD;" text="sin" textFill="#fcf3f3">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnCos" layoutX="126.0" layoutY="293.0" mnemonicParsing="false" onAction="#cos" prefHeight="54.0" prefWidth="54.0" style="-fx-background-color: #6A5ACD;" text="cos" textFill="#fcf3f3">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnTan" layoutX="209.0" layoutY="293.0" mnemonicParsing="false" onAction="#tan" prefHeight="54.0" prefWidth="54.0" style="-fx-background-color: #6A5ACD;" text="tan" textFill="#fcf3f3">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnLog" layoutX="298.0" layoutY="209.0" mnemonicParsing="false" onAction="#log" prefHeight="54.0" prefWidth="54.0" style="-fx-background-color: #6A5ACD;" text="log" textFill="#fcf3f3">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
